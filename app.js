@@ -18,8 +18,8 @@ app.set('view engine','pug');
 
 // Oauth 2.0 
 passport.use(new Strategy({
-	clientID: "",
-	clientSecret:"",
+	clientID: "129890780988605",
+	clientSecret:"2394ce6365f22f9ba87215942570a5d1",
 	callbackURL:"http://localhost:8000/auth/facebook/callback"
 },function(accessToken,refreshToken, profile, cb){
 	// TO DO: 
