@@ -4,10 +4,10 @@
   "description": "Login con Facebook",
   "main": "app.js",
   "env": {
-  	"NODE_ENV": "production"
+    "NODE_ENV": "production"
   },
   "scripts": {
-  	"start": "node app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Oscar Cornejo",
