@@ -1,0 +1,29 @@
+html
+	head
+		link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.css")
+	body
+		.container
+			nav(class="navbar navbar-inverse navbar-emossed")
+				.container-fluid
+					.navbar-header
+						a.navbar-brand(href="/") Cool logo
+					.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							li
+								a(href="/friends") Buscar a mis amigos
+							li
+								a(href="/auth/close") Cerrar sesión
+			section
+				h1 Perfiles extraordinarios
+				p Cuéntanos acerca de tus logros más increíbles y deja que otros usuarios te los reconozcan 🙌
+
+				.row
+					.col-xs-6(style="float:none")
+						form(action="/logros" method="POST")
+							input(type="text" class="form-control" placeholder="Qué has logrado" name="logro")
+							input(type="submit" value="Enviar" class="btn btn-info" style="margin-top:20px;")
+
+
+
+
