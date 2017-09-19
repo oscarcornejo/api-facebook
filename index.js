@@ -7,7 +7,7 @@ var graph = require('fbgraph');
 var User = require("./models/user");
 
 var app = express();
-
+var PORT = process.env.PORT || 8000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
@@ -111,6 +111,6 @@ app.get("/auth/close",function(req,res){
 	res.redirect("/");
 })
 
-app.listen(8000, function () {
+app.listen(PORT, function () {
   console.log('Listening on port 8000');
 });
