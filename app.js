@@ -8,6 +8,7 @@ var User = require("./models/user");
 
 var app = express();
 var port = process.env.PORT || 8000;
+let server = require('http').Server(app);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
@@ -113,4 +114,8 @@ app.get("/auth/close",function(req,res){
 
 app.listen(port, function () {
   console.log('Listening on port 8000');
+});
+
+server.listen(port, function() {
+    console.log("App is running on port " + port);
 });
