@@ -2,9 +2,10 @@ var mongoose = require("mongoose");
 var findOrCreate = require("mongoose-findorcreate");
 
 var Schema = mongoose.Schema;
-mongoose.connect("mongodb://heroku_4zr5vr3g:dolarboy1@ds139964.mlab.com:39964/heroku_4zr5vr3g");
-// mongoose.connect("mongodb://localhost/taller_facebook");
+var mongoURI = "mongodb://localhost/taller_facebook";
+mongoose.connect(process.env.MONGOLAB_URI || mongoURI);
 
+process.env.MONGOLAB_URI
 var userSchema = new Schema({
 	name: String,
 	provider: String,
