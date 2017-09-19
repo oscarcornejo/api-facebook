@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "Login con Facebook",
   "main": "app.js",
+  "env": {
+  	"NODE_ENV": "production"
+  },
   "scripts": {
+  	"start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "scripts": {
-    "start": "node app.js"
-  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "cookie-session": "^2.0.0-alpha.1",

@@ -7,8 +7,7 @@ var graph = require('fbgraph');
 var User = require("./models/user");
 
 var app = express();
-var port = process.env.PORT || 8000;
-let server = require('http').Server(app);
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
@@ -21,7 +20,7 @@ app.set('view engine','pug');
 passport.use(new Strategy({
 	clientID: "129890780988605",
 	clientSecret:"2394ce6365f22f9ba87215942570a5d1",
-	callbackURL:"https://buscar-amigos.herokuapp.com/auth/facebook/callback"
+	callbackURL:"http://localhost:8000/auth/facebook/callback"
 },function(accessToken,refreshToken, profile, cb){
 	// TO DO: 
 	var profile = profile;
@@ -112,10 +111,6 @@ app.get("/auth/close",function(req,res){
 	res.redirect("/");
 })
 
-// app.listen(port, function () {
-//   console.log('Listening on port 8000');
-// });
-
-server.listen(port, function() {
-    console.log("App is running on port " + port);
+app.listen(8000, function () {
+  console.log('Listening on port 8000');
 });
