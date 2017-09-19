@@ -112,9 +112,9 @@ app.get("/auth/close",function(req,res){
 	res.redirect("/");
 })
 
-app.listen(port, function () {
-  console.log('Listening on port 8000');
-});
+// app.listen(port, function () {
+//   console.log('Listening on port 8000');
+// });
 
 server.listen(port, function() {
     console.log("App is running on port " + port);
