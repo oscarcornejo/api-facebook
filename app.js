@@ -21,7 +21,7 @@ app.set('view engine','pug');
 passport.use(new Strategy({
 	clientID: "129890780988605",
 	clientSecret:"2394ce6365f22f9ba87215942570a5d1",
-	callbackURL:"https://app-facebook-api.herokuapp.com/auth/facebook/callback"
+	callbackURL:"https://buscar-amigos.herokuapp.com/auth/facebook/callback"
 },function(accessToken,refreshToken, profile, cb){
 	// TO DO: 
 	var profile = profile;
