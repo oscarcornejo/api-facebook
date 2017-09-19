@@ -7,6 +7,7 @@ var graph = require('fbgraph');
 var User = require("./models/user");
 
 var app = express();
+
 var PORT = process.env.PORT || 8000;
 
 app.use(bodyParser.json());
