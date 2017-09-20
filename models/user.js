@@ -4,7 +4,8 @@ var findOrCreate = require("mongoose-findorcreate");
 var Schema = mongoose.Schema;
 
 var mongoURI = "mongodb://localhost/taller_facebook";
-mongoose.connect(process.env.MONGOLAB_URI || mongoURI);
+
+mongoose.connect(process.env.MONGOLAB_URI || mongoURI, { useMongoClient: true });
 
 process.env.MONGOLAB_URI
 var userSchema = new Schema({

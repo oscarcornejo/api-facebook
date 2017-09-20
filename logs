@@ -1,0 +1,101 @@
+2017-09-20T00:24:13.367035+00:00 app[web.1]:       throw er; // Unhandled 'error' event
+2017-09-20T00:24:13.367036+00:00 app[web.1]:       ^
+2017-09-20T00:24:13.368670+00:00 app[web.1]: MongoError: failed to connect to server [undefined:27017] on first connect [MongoError: getaddrinfo ENOTFOUND undefined undefined:27017]
+2017-09-20T00:24:13.368673+00:00 app[web.1]:     at null.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+2017-09-20T00:24:13.368674+00:00 app[web.1]:     at emitOne (events.js:77:13)
+2017-09-20T00:24:13.368675+00:00 app[web.1]:     at emit (events.js:169:7)
+2017-09-20T00:24:13.368676+00:00 app[web.1]:     at null.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+2017-09-20T00:24:13.368677+00:00 app[web.1]:     at g (events.js:260:16)
+2017-09-20T00:24:13.368677+00:00 app[web.1]:     at emitTwo (events.js:87:13)
+2017-09-20T00:24:13.368678+00:00 app[web.1]:     at emit (events.js:172:7)
+2017-09-20T00:24:13.368679+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:187:49)
+2017-09-20T00:24:13.368680+00:00 app[web.1]:     at Socket.g (events.js:260:16)
+2017-09-20T00:24:13.368680+00:00 app[web.1]:     at emitOne (events.js:77:13)
+2017-09-20T00:24:13.368681+00:00 app[web.1]:     at Socket.emit (events.js:169:7)
+2017-09-20T00:24:13.368682+00:00 app[web.1]:     at connectErrorNT (net.js:993:8)
+2017-09-20T00:24:13.368683+00:00 app[web.1]:     at doNTCallback2 (node.js:429:9)
+2017-09-20T00:24:13.368683+00:00 app[web.1]:     at process._tickCallback (node.js:343:17)
+2017-09-20T00:24:13.480752+00:00 heroku[web.1]: State changed from starting to crashed
+2017-09-20T00:24:36.429139+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=login-web.herokuapp.com request_id=920dd4c1-fc00-4890-98f1-75531d1b3823 fwd="181.161.151.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T00:24:37.259942+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=login-web.herokuapp.com request_id=83c8b75d-f50f-4ff1-b15a-1175ab013dc1 fwd="181.161.151.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T00:50:05.780707+00:00 heroku[web.1]: State changed from crashed to starting
+2017-09-20T00:50:08.619968+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-09-20T00:50:12.566159+00:00 app[web.1]: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+2017-09-20T00:50:12.653073+00:00 app[web.1]: Listening on port 8000
+2017-09-20T00:50:12.668689+00:00 app[web.1]:
+2017-09-20T00:50:12.668692+00:00 app[web.1]: events.js:141
+2017-09-20T00:50:12.668693+00:00 app[web.1]:       throw er; // Unhandled 'error' event
+2017-09-20T00:50:12.668693+00:00 app[web.1]:       ^
+2017-09-20T00:50:12.670654+00:00 app[web.1]: MongoError: failed to connect to server [undefined:27017] on first connect [MongoError: getaddrinfo ENOTFOUND undefined undefined:27017]
+2017-09-20T00:50:12.670655+00:00 app[web.1]:     at null.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+2017-09-20T00:50:12.670656+00:00 app[web.1]:     at emitOne (events.js:77:13)
+2017-09-20T00:50:12.670657+00:00 app[web.1]:     at emit (events.js:169:7)
+2017-09-20T00:50:12.670657+00:00 app[web.1]:     at null.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+2017-09-20T00:50:12.670658+00:00 app[web.1]:     at g (events.js:260:16)
+2017-09-20T00:50:12.670658+00:00 app[web.1]:     at emitTwo (events.js:87:13)
+2017-09-20T00:50:12.670658+00:00 app[web.1]:     at emit (events.js:172:7)
+2017-09-20T00:50:12.670659+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:187:49)
+2017-09-20T00:50:12.670659+00:00 app[web.1]:     at Socket.g (events.js:260:16)
+2017-09-20T00:50:12.670660+00:00 app[web.1]:     at emitOne (events.js:77:13)
+2017-09-20T00:50:12.670660+00:00 app[web.1]:     at Socket.emit (events.js:169:7)
+2017-09-20T00:50:12.670661+00:00 app[web.1]:     at connectErrorNT (net.js:993:8)
+2017-09-20T00:50:12.670661+00:00 app[web.1]:     at doNTCallback2 (node.js:429:9)
+2017-09-20T00:50:12.670661+00:00 app[web.1]:     at process._tickCallback (node.js:343:17)
+2017-09-20T00:50:12.790410+00:00 heroku[web.1]: Process exited with status 1
+2017-09-20T00:50:12.806861+00:00 heroku[web.1]: State changed from starting to crashed
+2017-09-20T00:55:14.870843+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=login-web.herokuapp.com request_id=af3279d7-d873-4ec4-af0d-07a6a1ace4ba fwd="181.161.151.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T00:55:15.461178+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=login-web.herokuapp.com request_id=723c68ed-d009-4c49-8dca-c92a1c0d64c8 fwd="181.161.151.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T01:04:27.998166+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=login-web.herokuapp.com request_id=b8d5eb42-1315-415a-8e97-85a24cc2bbf6 fwd="181.161.151.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T01:04:28.678508+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=login-web.herokuapp.com request_id=d3b59c2b-8b7c-4f30-b0e9-fc9060055c0c fwd="181.161.151.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T01:07:38.878668+00:00 heroku[web.1]: State changed from crashed to starting
+2017-09-20T01:07:41.273193+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-09-20T01:07:45.708689+00:00 heroku[web.1]: State changed from starting to crashed
+2017-09-20T01:07:45.711258+00:00 heroku[web.1]: State changed from crashed to starting
+2017-09-20T01:07:45.682916+00:00 heroku[web.1]: Process exited with status 1
+2017-09-20T01:07:45.485214+00:00 app[web.1]: (node:4) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+2017-09-20T01:07:45.490416+00:00 app[web.1]: Listening on port 8000
+2017-09-20T01:07:45.526859+00:00 app[web.1]:
+2017-09-20T01:07:45.526861+00:00 app[web.1]: events.js:160
+2017-09-20T01:07:45.526862+00:00 app[web.1]:       throw er; // Unhandled 'error' event
+2017-09-20T01:07:45.526863+00:00 app[web.1]:       ^
+2017-09-20T01:07:45.526868+00:00 app[web.1]: MongoError: failed to connect to server [localhost:27017] on first connect [MongoError: connect ECONNREFUSED 127.0.0.1:27017]
+2017-09-20T01:07:45.526869+00:00 app[web.1]:     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+2017-09-20T01:07:45.526870+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-09-20T01:07:45.526870+00:00 app[web.1]:     at Pool.emit (events.js:188:7)
+2017-09-20T01:07:45.526871+00:00 app[web.1]:     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+2017-09-20T01:07:45.526872+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-09-20T01:07:45.526872+00:00 app[web.1]:     at Object.onceWrapper (events.js:290:19)
+2017-09-20T01:07:45.526873+00:00 app[web.1]:     at Connection.emit (events.js:191:7)
+2017-09-20T01:07:45.526874+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:187:49)
+2017-09-20T01:07:45.526874+00:00 app[web.1]:     at Object.onceWrapper (events.js:290:19)
+2017-09-20T01:07:45.526875+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-09-20T01:07:45.526875+00:00 app[web.1]:     at Socket.emit (events.js:188:7)
+2017-09-20T01:07:45.526876+00:00 app[web.1]:     at emitErrorNT (net.js:1281:8)
+2017-09-20T01:07:45.526878+00:00 app[web.1]:     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+2017-09-20T01:07:45.526878+00:00 app[web.1]:     at process._tickCallback (internal/process/next_tick.js:98:9)
+2017-09-20T01:07:48.210550+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-09-20T01:07:51.292754+00:00 app[web.1]: (node:4) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+2017-09-20T01:07:51.295605+00:00 app[web.1]: Listening on port 8000
+2017-09-20T01:07:51.312279+00:00 app[web.1]:
+2017-09-20T01:07:51.312282+00:00 app[web.1]: events.js:160
+2017-09-20T01:07:51.312283+00:00 app[web.1]:       throw er; // Unhandled 'error' event
+2017-09-20T01:07:51.312284+00:00 app[web.1]:       ^
+2017-09-20T01:07:51.312289+00:00 app[web.1]: MongoError: failed to connect to server [localhost:27017] on first connect [MongoError: connect ECONNREFUSED 127.0.0.1:27017]
+2017-09-20T01:07:51.312290+00:00 app[web.1]:     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+2017-09-20T01:07:51.312290+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-09-20T01:07:51.312291+00:00 app[web.1]:     at Pool.emit (events.js:188:7)
+2017-09-20T01:07:51.312292+00:00 app[web.1]:     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+2017-09-20T01:07:51.312293+00:00 app[web.1]:     at Object.onceWrapper (events.js:290:19)
+2017-09-20T01:07:51.312293+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-09-20T01:07:51.312294+00:00 app[web.1]:     at Connection.emit (events.js:191:7)
+2017-09-20T01:07:51.312295+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:187:49)
+2017-09-20T01:07:51.312295+00:00 app[web.1]:     at Object.onceWrapper (events.js:290:19)
+2017-09-20T01:07:51.312296+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-09-20T01:07:51.312296+00:00 app[web.1]:     at Socket.emit (events.js:188:7)
+2017-09-20T01:07:51.312297+00:00 app[web.1]:     at emitErrorNT (net.js:1281:8)
+2017-09-20T01:07:51.312326+00:00 app[web.1]:     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+2017-09-20T01:07:51.312327+00:00 app[web.1]:     at process._tickCallback (internal/process/next_tick.js:98:9)
+2017-09-20T01:07:51.419263+00:00 heroku[web.1]: State changed from starting to crashed
+2017-09-20T01:07:51.404835+00:00 heroku[web.1]: Process exited with status 1
+2017-09-20T01:07:53.897117+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=login-web.herokuapp.com request_id=d2a4cfa1-13db-4f55-b104-cae28a0d2976 fwd="181.161.151.13" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-20T01:07:54.683511+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=login-web.herokuapp.com request_id=371bd8a0-539f-47da-9804-7c11b030bea1 fwd="181.161.151.13" dyno= connect= service= status=503 bytes= protocol=https
